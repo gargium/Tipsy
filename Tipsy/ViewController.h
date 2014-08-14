@@ -10,7 +10,8 @@
 
 @interface ViewController : UIViewController
 
-
+@property (weak, nonatomic) IBOutlet UILabel *tipAmountField;
+@property (weak, nonatomic) IBOutlet UILabel *totalBillAmount;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UITextField *enteredBill;
 @property (weak, nonatomic) IBOutlet UITextField *tipField;

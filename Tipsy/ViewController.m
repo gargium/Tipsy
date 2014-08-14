@@ -15,6 +15,7 @@
 @implementation ViewController
 
 @synthesize enteredBill, tipField, splitField, totalLabel;
+@synthesize tipAmountField, totalBillAmount;
 
 - (void)viewDidLoad
 {
@@ -39,6 +40,8 @@
 
 -(IBAction)calculateBill:(id)sender {
     
+    [self removeNumberPad];
+    
     double bill = 0.0;
     double tip = 0.0;
     int split = 0;
@@ -50,8 +53,11 @@
     
     total = ((bill * (tip/100) + bill) / split);
     
-    totalLabel.text = [NSString stringWithFormat:@"%i people at $%.2f per person", split, total];
-    totalLabel.numberOfLines = 2;
+    totalLabel.text = [NSString stringWithFormat:@"$%.2f each", total];
+    totalLabel.numberOfLines = 1;
+    
+    tipAmountField.text = [NSString stringWithFormat:@"$%.2f", tip * bill * .01];
+    totalBillAmount.text = [NSString stringWithFormat:@"$%.2f", (tip * bill * .01) + bill];
     
     
     
