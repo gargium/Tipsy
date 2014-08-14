@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E078B32199D41130096CECD /* TipsyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E078B31199D41130096CECD /* TipsyBG.png */; };
 		9E477E71194E2E21009F7C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E70194E2E21009F7C8C /* Foundation.framework */; };
 		9E477E73194E2E21009F7C8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E72194E2E21009F7C8C /* CoreGraphics.framework */; };
 		9E477E75194E2E21009F7C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E74194E2E21009F7C8C /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		9E477E92194E2E22009F7C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E74194E2E21009F7C8C /* UIKit.framework */; };
 		9E477E9A194E2E22009F7C8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E477E98194E2E22009F7C8C /* InfoPlist.strings */; };
 		9E477E9C194E2E22009F7C8C /* TipsyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E477E9B194E2E22009F7C8C /* TipsyTests.m */; };
-		9EDDD16F19999FAB00439F5E /* Blurred Backgrounds (13).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EDDD16E19999FAB00439F5E /* Blurred Backgrounds (13).jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E078B31199D41130096CECD /* TipsyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TipsyBG.png; sourceTree = SOURCE_ROOT; };
 		9E477E6D194E2E21009F7C8C /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E477E70194E2E21009F7C8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9E477E72194E2E21009F7C8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		9E477E97194E2E22009F7C8C /* TipsyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipsyTests-Info.plist"; sourceTree = "<group>"; };
 		9E477E99194E2E22009F7C8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E477E9B194E2E22009F7C8C /* TipsyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsyTests.m; sourceTree = "<group>"; };
-		9EDDD16E19999FAB00439F5E /* Blurred Backgrounds (13).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blurred Backgrounds (13).jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E078B33199D41330096CECD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9E078B31199D41130096CECD /* TipsyBG.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		9E477E64194E2E20009F7C8C = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +122,7 @@
 		9E477E76194E2E21009F7C8C /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				9E078B33199D41330096CECD /* Images */,
 				9E477E7F194E2E21009F7C8C /* AppDelegate.h */,
 				9E477E80194E2E21009F7C8C /* AppDelegate.m */,
 				9E477E82194E2E22009F7C8C /* Main.storyboard */,
@@ -128,7 +137,6 @@
 		9E477E77194E2E21009F7C8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9EDDD16E19999FAB00439F5E /* Blurred Backgrounds (13).jpg */,
 				9E477E78194E2E21009F7C8C /* Tipsy-Info.plist */,
 				9E477E79194E2E21009F7C8C /* InfoPlist.strings */,
 				9E477E7C194E2E21009F7C8C /* main.m */,
@@ -233,8 +241,8 @@
 			files = (
 				9E477E89194E2E22009F7C8C /* Images.xcassets in Resources */,
 				9E477E7B194E2E21009F7C8C /* InfoPlist.strings in Resources */,
+				9E078B32199D41130096CECD /* TipsyBG.png in Resources */,
 				9E477E84194E2E22009F7C8C /* Main.storyboard in Resources */,
-				9EDDD16F19999FAB00439F5E /* Blurred Backgrounds (13).jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

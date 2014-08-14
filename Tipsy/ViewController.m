@@ -23,6 +23,12 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeNumberPad)];
     [self.view addGestureRecognizer:tap];
+   
+    //add background image to view
+    UIImage *backgroundImageGold = [UIImage imageNamed:@"TipsyBG.png"];
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+    backgroundImageView.image = backgroundImageGold;
+    [self.view insertSubview:backgroundImageView atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
