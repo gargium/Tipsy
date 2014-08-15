@@ -13,10 +13,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipAmountField;
 @property (weak, nonatomic) IBOutlet UILabel *totalBillAmount;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+
 @property (weak, nonatomic) IBOutlet UITextField *enteredBill;
 @property (weak, nonatomic) IBOutlet UITextField *tipField;
 @property (weak, nonatomic) IBOutlet UITextField *splitField;
+
 @property (weak, nonatomic) IBOutlet UIButton *calculateBill;
 - (IBAction)calculateBill:(id)sender;
+
 
 @end

@@ -59,8 +59,6 @@
     tipAmountField.text = [NSString stringWithFormat:@"$%.2f", tip * bill * .01];
     totalBillAmount.text = [NSString stringWithFormat:@"$%.2f", (tip * bill * .01) + bill];
     
-    
-    
 }
 
 -(void) removeNumberPad {
