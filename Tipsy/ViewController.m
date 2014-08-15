@@ -51,6 +51,13 @@
     tip = [tipField.text doubleValue];
     split = [splitField.text intValue];
     
+    if (split <= 0) {
+        
+        UIAlertView *errorMessage = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Split must be a positive integer!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [errorMessage show];
+        //[errorMessage release];
+    }
+    
     total = ((bill * (tip/100) + bill) / split);
     
     totalLabel.text = [NSString stringWithFormat:@"$%.2f each", total];
