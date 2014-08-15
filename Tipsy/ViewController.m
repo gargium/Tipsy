@@ -6,7 +6,10 @@
 //  Copyright (c) 2014 Gargium Interactive. All rights reserved.
 //
 
+// FOR FUTURE VERSIONS: Add a "save location" functionality and a settings bar to set certain defaults.
+
 #import "ViewController.h"
+#import <Social/Social.h>
 
 @interface ViewController ()
 
@@ -67,6 +70,104 @@
     totalBillAmount.text = [NSString stringWithFormat:@"$%.2f", (tip * bill * .01) + bill];
     
 }
+
+- (IBAction)postToTwitter:(id)sender {
+//        if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+//        
+//        SLComposeViewController *tweeter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+//        [tweeter setInitialText:@"Had a great time eating at (insert location here)!"];
+//        [self presentViewController:tweeter animated:YES completion:nil];
+
+    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        mySLComposerSheet = [[SLComposeViewController alloc] init];
+        mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        [mySLComposerSheet setInitialText:[NSString stringWithFormat:@"Had a great time eating at (insert venue here)!", mySLComposerSheet.serviceType]];
+        [self presentViewController:mySLComposerSheet animated:YES completion:nil];
+    }
+    
+    [mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result) {
+        NSString *output;
+        switch (result) {
+            case SLComposeViewControllerResultCancelled:
+                output = @"Action Cancelled";
+                break;
+            case SLComposeViewControllerResultDone:
+                output = @"Post Successful";
+            default:
+                break;
+        }
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Twitter" message:output delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }];
+    
+}
+
+
+
+//if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) //check if Facebook Account is linked
+//{
+//    mySLComposerSheet = [[SLComposeViewController alloc] init]; //initiate the Social Controller
+//    mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook]; //Tell him with what social plattform to use it, e.g. facebook or twitter
+//    [mySLComposerSheet setInitialText:[NSString stringWithFormat:@"Test",mySLComposerSheet.serviceType]]; //the message you want to post
+//    [mySLComposerSheet addImage:yourimage]; //an image you could post
+//    //for more instance methodes, go here:https://developer.apple.com/library/ios/#documentation/NetworkingInternet/Reference/SLComposeViewController_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40012205
+//    [self presentViewController:mySLComposerSheet animated:YES completion:nil];
+//}
+//[mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result) {
+//    NSString *output;
+//    switch (result) {
+//        case SLComposeViewControllerResultCancelled:
+//            output = @"Action Cancelled";
+//            break;
+//        case SLComposeViewControllerResultDone:
+//            output = @"Post Successfull";
+//            break;
+//        default:
+//            break;
+//    } //check if everything worked properly. Give out a message on the state.
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebook" message:output delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+//    [alert show];
+//}];
+
+
+- (IBAction)postToFacebook:(id)sender {
+//    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+//        SLComposeViewController *fb = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+//        [fb setInitialText:@"Had a great time eating at (instert location here)!"];
+//        [self presentViewController:fb animated:YES completion:nil];
+    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        mySLComposerSheet = [[SLComposeViewController alloc] init];
+        mySLComposerSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [mySLComposerSheet setInitialText:[NSString stringWithFormat:@"Had a great time eating at (insert venue here)!", mySLComposerSheet.serviceType]];
+        [self presentViewController:mySLComposerSheet animated:YES completion:nil];
+    }
+    
+    [mySLComposerSheet setCompletionHandler:^(SLComposeViewControllerResult result) {
+        NSString *output;
+        switch (result) {
+            case SLComposeViewControllerResultCancelled:
+                output = @"Action Cancelled";
+                break;
+            case SLComposeViewControllerResultDone:
+                output = @"Post Successful";
+            default:
+                break;
+        }
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebook" message:output delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }];
+    
+}
+
+
+
+
+
+
 
 -(void) removeNumberPad {
     

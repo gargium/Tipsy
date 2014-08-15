@@ -11,6 +11,9 @@
 		9E078B37199D59330096CECD /* TipsyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E078B36199D59330096CECD /* TipsyBG.png */; };
 		9E078B39199D65370096CECD /* happyFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E078B38199D65370096CECD /* happyFace.png */; };
 		9E078B3B199D687A0096CECD /* PEOPLE.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E078B3A199D687A0096CECD /* PEOPLE.png */; };
+		9E3BFFF0199DB2DA001D8BBE /* Twitter_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E3BFFEF199DB2DA001D8BBE /* Twitter_logo_white.png */; };
+		9E3BFFF2199DB410001D8BBE /* Facebook_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E3BFFF1199DB410001D8BBE /* Facebook_Logo.png */; };
+		9E3BFFF4199DB712001D8BBE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3BFFF3199DB712001D8BBE /* Social.framework */; };
 		9E477E71194E2E21009F7C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E70194E2E21009F7C8C /* Foundation.framework */; };
 		9E477E73194E2E21009F7C8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E72194E2E21009F7C8C /* CoreGraphics.framework */; };
 		9E477E75194E2E21009F7C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E74194E2E21009F7C8C /* UIKit.framework */; };
@@ -42,6 +45,9 @@
 		9E078B36199D59330096CECD /* TipsyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TipsyBG.png; sourceTree = SOURCE_ROOT; };
 		9E078B38199D65370096CECD /* happyFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happyFace.png; path = ../happyFace.png; sourceTree = "<group>"; };
 		9E078B3A199D687A0096CECD /* PEOPLE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PEOPLE.png; path = ../PEOPLE.png; sourceTree = "<group>"; };
+		9E3BFFEF199DB2DA001D8BBE /* Twitter_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Twitter_logo_white.png; path = ../Twitter_logo_white.png; sourceTree = "<group>"; };
+		9E3BFFF1199DB410001D8BBE /* Facebook_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Facebook_Logo.png; path = ../Facebook_Logo.png; sourceTree = "<group>"; };
+		9E3BFFF3199DB712001D8BBE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		9E477E6D194E2E21009F7C8C /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E477E70194E2E21009F7C8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9E477E72194E2E21009F7C8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3BFFF4199DB712001D8BBE /* Social.framework in Frameworks */,
 				9E477E73194E2E21009F7C8C /* CoreGraphics.framework in Frameworks */,
 				9E477E75194E2E21009F7C8C /* UIKit.framework in Frameworks */,
 				9E477E71194E2E21009F7C8C /* Foundation.framework in Frameworks */,
@@ -90,6 +97,8 @@
 		9E078B33199D41330096CECD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9E3BFFF1199DB410001D8BBE /* Facebook_Logo.png */,
+				9E3BFFEF199DB2DA001D8BBE /* Twitter_logo_white.png */,
 				9E078B3A199D687A0096CECD /* PEOPLE.png */,
 				9E078B38199D65370096CECD /* happyFace.png */,
 				9E078B34199D53F10096CECD /* dividerLine.png */,
@@ -120,6 +129,7 @@
 		9E477E6F194E2E21009F7C8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E3BFFF3199DB712001D8BBE /* Social.framework */,
 				9E477E70194E2E21009F7C8C /* Foundation.framework */,
 				9E477E72194E2E21009F7C8C /* CoreGraphics.framework */,
 				9E477E74194E2E21009F7C8C /* UIKit.framework */,
@@ -252,6 +262,8 @@
 				9E078B39199D65370096CECD /* happyFace.png in Resources */,
 				9E078B35199D53F10096CECD /* dividerLine.png in Resources */,
 				9E078B3B199D687A0096CECD /* PEOPLE.png in Resources */,
+				9E3BFFF0199DB2DA001D8BBE /* Twitter_logo_white.png in Resources */,
+				9E3BFFF2199DB410001D8BBE /* Facebook_Logo.png in Resources */,
 				9E078B37199D59330096CECD /* TipsyBG.png in Resources */,
 				9E477E7B194E2E21009F7C8C /* InfoPlist.strings in Resources */,
 				9E477E84194E2E22009F7C8C /* Main.storyboard in Resources */,

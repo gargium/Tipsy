@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    SLComposeViewController *mySLComposerSheet;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *tipAmountField;
 @property (weak, nonatomic) IBOutlet UILabel *totalBillAmount;
@@ -19,7 +23,14 @@
 @property (weak, nonatomic) IBOutlet UITextField *splitField;
 
 @property (weak, nonatomic) IBOutlet UIButton *calculateBill;
+
+
+
 - (IBAction)calculateBill:(id)sender;
+- (IBAction)postToTwitter:(id)sender;
+- (IBAction)postToFacebook:(id)sender;
+
+
 
 
 @end
