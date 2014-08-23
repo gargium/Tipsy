@@ -19,13 +19,30 @@
 @implementation ViewController
 
 //  synthesis of properties that were declared in ViewController.h file
-@synthesize enteredBill, tipField, splitField, totalLabel;
-@synthesize tipAmountField, totalBillAmount;
+@synthesize enteredBill, tipField, splitField;
+@synthesize tipAmountField, totalBillAmount, totalLabel;
+
+- (BOOL) prefersStatusBarHidden {
+    return YES;
+}
+
+- (void) setLabelDefaults {
+    
+    tipAmountField.numberOfLines = 1;
+    tipAmountField.adjustsFontSizeToFitWidth = YES;
+    totalBillAmount.numberOfLines = 1;
+    totalBillAmount.adjustsFontSizeToFitWidth = YES;
+    totalLabel.numberOfLines = 1;
+    totalLabel.adjustsFontSizeToFitWidth = YES;
+
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self setLabelDefaults];
     
 //  Calls the removeNumberPad method when the user taps out of the keyboard
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeNumberPad)];

@@ -14,6 +14,8 @@
 		9E3BFFF0199DB2DA001D8BBE /* Twitter_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E3BFFEF199DB2DA001D8BBE /* Twitter_logo_white.png */; };
 		9E3BFFF2199DB410001D8BBE /* Facebook_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E3BFFF1199DB410001D8BBE /* Facebook_Logo.png */; };
 		9E3BFFF4199DB712001D8BBE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3BFFF3199DB712001D8BBE /* Social.framework */; };
+		9E443D9919A70C8C00AE5F31 /* calculateButtonExp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E443D9819A70C8C00AE5F31 /* calculateButtonExp.png */; };
+		9E443D9C19A814F200AE5F31 /* iPad-Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E443D9B19A814F200AE5F31 /* iPad-Main.storyboard */; };
 		9E477E71194E2E21009F7C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E70194E2E21009F7C8C /* Foundation.framework */; };
 		9E477E73194E2E21009F7C8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E72194E2E21009F7C8C /* CoreGraphics.framework */; };
 		9E477E75194E2E21009F7C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E74194E2E21009F7C8C /* UIKit.framework */; };
@@ -28,6 +30,7 @@
 		9E477E92194E2E22009F7C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E477E74194E2E21009F7C8C /* UIKit.framework */; };
 		9E477E9A194E2E22009F7C8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E477E98194E2E22009F7C8C /* InfoPlist.strings */; };
 		9E477E9C194E2E22009F7C8C /* TipsyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E477E9B194E2E22009F7C8C /* TipsyTests.m */; };
+		9E6D499A19A70733003A1277 /* divider_vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6D499919A70733003A1277 /* divider_vertical.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,8 @@
 		9E3BFFEF199DB2DA001D8BBE /* Twitter_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Twitter_logo_white.png; path = ../Twitter_logo_white.png; sourceTree = "<group>"; };
 		9E3BFFF1199DB410001D8BBE /* Facebook_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Facebook_Logo.png; path = ../Facebook_Logo.png; sourceTree = "<group>"; };
 		9E3BFFF3199DB712001D8BBE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9E443D9819A70C8C00AE5F31 /* calculateButtonExp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calculateButtonExp.png; path = ../calculateButtonExp.png; sourceTree = "<group>"; };
+		9E443D9B19A814F200AE5F31 /* iPad-Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "iPad-Main.storyboard"; path = "../iPad-Main.storyboard"; sourceTree = "<group>"; };
 		9E477E6D194E2E21009F7C8C /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E477E70194E2E21009F7C8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9E477E72194E2E21009F7C8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,6 +72,7 @@
 		9E477E97194E2E22009F7C8C /* TipsyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipsyTests-Info.plist"; sourceTree = "<group>"; };
 		9E477E99194E2E22009F7C8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E477E9B194E2E22009F7C8C /* TipsyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsyTests.m; sourceTree = "<group>"; };
+		9E6D499919A70733003A1277 /* divider_vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divider_vertical.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,14 +103,24 @@
 		9E078B33199D41330096CECD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9E443D9819A70C8C00AE5F31 /* calculateButtonExp.png */,
 				9E3BFFF1199DB410001D8BBE /* Facebook_Logo.png */,
 				9E3BFFEF199DB2DA001D8BBE /* Twitter_logo_white.png */,
 				9E078B3A199D687A0096CECD /* PEOPLE.png */,
 				9E078B38199D65370096CECD /* happyFace.png */,
+				9E6D499919A70733003A1277 /* divider_vertical.png */,
 				9E078B34199D53F10096CECD /* dividerLine.png */,
 				9E078B36199D59330096CECD /* TipsyBG.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		9E443D9A19A8143100AE5F31 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				9E443D9B19A814F200AE5F31 /* iPad-Main.storyboard */,
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 		9E477E64194E2E20009F7C8C = {
@@ -141,6 +157,7 @@
 		9E477E76194E2E21009F7C8C /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				9E443D9A19A8143100AE5F31 /* iPad */,
 				9E078B33199D41330096CECD /* Images */,
 				9E477E7F194E2E21009F7C8C /* AppDelegate.h */,
 				9E477E80194E2E21009F7C8C /* AppDelegate.m */,
@@ -259,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E477E89194E2E22009F7C8C /* Images.xcassets in Resources */,
+				9E6D499A19A70733003A1277 /* divider_vertical.png in Resources */,
 				9E078B39199D65370096CECD /* happyFace.png in Resources */,
+				9E443D9C19A814F200AE5F31 /* iPad-Main.storyboard in Resources */,
 				9E078B35199D53F10096CECD /* dividerLine.png in Resources */,
+				9E443D9919A70C8C00AE5F31 /* calculateButtonExp.png in Resources */,
 				9E078B3B199D687A0096CECD /* PEOPLE.png in Resources */,
 				9E3BFFF0199DB2DA001D8BBE /* Twitter_logo_white.png in Resources */,
 				9E3BFFF2199DB410001D8BBE /* Facebook_Logo.png in Resources */,
@@ -415,7 +435,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tipsy/Tipsy-Prefix.pch";
 				INFOPLIST_FILE = "Tipsy/Tipsy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,7 +450,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tipsy/Tipsy-Prefix.pch";
 				INFOPLIST_FILE = "Tipsy/Tipsy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

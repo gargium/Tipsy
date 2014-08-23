@@ -36,5 +36,8 @@
 - (IBAction)postToTwitter:(id)sender;
 - (IBAction)postToFacebook:(id)sender;
 
+-(void) setLabelDefaults;
+-(BOOL) prefersStatusBarHidden;
+
 
 @end
